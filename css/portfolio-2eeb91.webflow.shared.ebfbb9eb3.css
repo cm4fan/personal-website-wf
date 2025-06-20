@@ -2695,11 +2695,12 @@ textarea.w-input, textarea.w-select {
 .switcher {
     position: relative;
     margin: 0;
-    padding: 4px;
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     border: none;
+    height: 36px;
     z-index: 0;
 }
 
@@ -2718,13 +2719,13 @@ textarea.w-input, textarea.w-select {
     -webkit-appearance: none;
     appearance: none;
     margin: 0;
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px;
-    transition: all 0.2s ease-in;
     border: none;
+    cursor: pointer;
 }
 
 .switcher__radio:focus {
@@ -2747,17 +2748,16 @@ textarea.w-input, textarea.w-select {
 
 .switcher__status {
     position: absolute;
-    padding: 4px;
-    top: 4px;
+    padding: 0;
+    top: 0;
     bottom: 4px;
-    width: 30px;
+    width: 98px;
     z-index: -1;
     border-radius: 30px;
     background-repeat: no-repeat;
     background-image: url('../images/status.svg');
     background-size: 24px;
-    background-position: center center;
-    transition: background-position 0.2s ease-in;
+    background-position: top 3px left 33px;
 
 }
 
@@ -2766,13 +2766,13 @@ textarea.w-input, textarea.w-select {
 }
 
 .switcher__radio--light:checked~.switcher__status {
-    background-position: left center;
+    background-position: top 3px left 3px;
 }
 
 .switcher__radio--auto:checked~.switcher__status {
-    background-position: center center;
+    background-position: top 3px left 33px;
 }
 
 .switcher__radio--dark:checked~.switcher__status {
-    background-position: right center;
+    background-position: top 3px right 11px;
 }
