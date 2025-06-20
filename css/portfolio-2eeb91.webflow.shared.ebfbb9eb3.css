@@ -2229,7 +2229,7 @@ textarea.w-input, textarea.w-select {
 .link-button {
   grid-column-gap: 2px;
   grid-row-gap: 2px;
-  border: 1px solid var(--_colors---bg-secondary);
+  border: 1px solid var(--_colors---bg-tertiary);
   border-radius: 16px;
   justify-content: center;
   align-items: center;
@@ -2268,6 +2268,7 @@ textarea.w-input, textarea.w-select {
 
 .link-button.connect-links {
   background-color: var(--_colors---bg-secondary);
+  border: 1px solid var(--_colors---bg-secondary);
   justify-content: flex-start;
   align-items: center;
   width: auto;
@@ -2441,7 +2442,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .tag {
-  border: 1px solid var(--_colors---bg-secondary);
+  border: 1px solid var(--_colors---bg-tertiary);
   color: var(--_colors---fg-tertiary);
   border-radius: 20px;
   margin-right: 8px;
@@ -2489,7 +2490,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .pet-project {
-  border: 1px solid var(--_colors---bg-secondary);
+  border: 1px solid var(--_colors---bg-tertiary);
   border-radius: 16px;
   justify-content: space-between;
   align-items: flex-start;
