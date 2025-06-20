@@ -2532,61 +2532,6 @@ textarea.w-input, textarea.w-select {
   margin-top: 20px;
 }
 
-.theme-switch-wrap {
-  grid-column-gap: 4px;
-  grid-row-gap: 4px;
-  background-color: #08090a0a;
-  border-radius: 5000px;
-  width: 100px;
-  height: 36px;
-  padding: .25rem;
-  display: flex;
-}
-
-.theme-toggle {
-  color: #08090a99;
-  background-color: #08090a00;
-  border: 1px #08090a12;
-  border-radius: 500px;
-  justify-content: center;
-  align-items: center;
-  width: 28px;
-  height: 28px;
-  margin-left: 0;
-  margin-right: 0;
-  padding: .4rem;
-  transition: all .4s;
-  display: flex;
-}
-
-.theme-toggle:hover {
-  background-color: #08090a12;
-  border-style: none;
-}
-
-.icon-flex {
-  display: flex;
-}
-
-.toggle_component {
-  background-color: #1010100d;
-  border: 1px solid #1010100d;
-  border-radius: 1.5rem;
-  justify-content: flex-start;
-  align-items: center;
-  width: 3rem;
-  padding: .25rem;
-  transition: opacity .2s;
-  display: flex;
-}
-
-.toggle_dot {
-  background-color: #5f4bb6;
-  border-radius: 1rem;
-  width: 1rem;
-  height: 1rem;
-}
-
 .container-6 {
   width: 100%;
 }
@@ -2691,6 +2636,19 @@ textarea.w-input, textarea.w-select {
 
 
 /* Switcher */
+
+
+.theme-switch-wrap {
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+  background-color: var(--_colors---bg-secondary);
+  border-radius: 5000px;
+  width: 100px;
+  height: 36px;
+  padding: .25rem;
+  display: flex;
+}
+
 
 .switcher {
     position: relative;

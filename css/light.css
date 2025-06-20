@@ -3,11 +3,11 @@
   --_colors---fg-tertiary: #969696;
   --_colors---bg-primary: white;
   --_colors---fg-secondary: #505050;
-  --_colors---bg-secondary: #e8e8e8;
+  --_colors---bg-secondary: #f3f3f3;
   --_colors---state-hover: #0000000d;
   --_colors---state-active: #00000017;
   --_colors---link-active: #01477f;
-  --_colors---bg-tertiary: #a5a5a5;
+  --_colors---bg-tertiary: #dadada;
   --_colors---bg-contrast: #222;
   --_colors---link-normal: #0168bb;
   --_colors---link-hover: #015599;
@@ -22,7 +22,7 @@
 }
 
 .switcher__radio:checked {
-    filter: invert(1);
+    filter: invert(0);
 }
 
 .switcher__status {
