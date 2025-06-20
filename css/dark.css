@@ -1,0 +1,29 @@
+:root {
+  --_colors---fg-primary: #e0e0e0;
+  --_colors---fg-tertiary: #717171;
+  --_colors---bg-primary: rgb(32, 32, 32);
+  --_colors---fg-secondary: #acacac;
+  --_colors---bg-secondary: #303030;
+  --_colors---state-hover: #ffffff0d;
+  --_colors---state-active: #ffffff17;
+  --_colors---link-active: #01477f;
+  --_colors---bg-tertiary: #474747;
+  --_colors---bg-contrast: #e1e1e1;
+  --_colors---link-normal: #0168bb;
+  --_colors---link-hover: #015599;
+  --_colors---link-visited: #630038;
+}
+
+/* Switcher */
+
+.switcher__radio {
+    filter: invert(1);
+}
+
+.switcher__radio:checked {
+    filter: invert(0);
+}
+
+.switcher__status {
+    filter: invert(1);
+}
