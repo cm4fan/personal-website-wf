@@ -2391,7 +2391,7 @@ textarea.w-input, textarea.w-select {
 .section.header {
   border: 1px solid var(--_colors---bg-primary);
   text-align: center;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 
@@ -2419,7 +2419,7 @@ textarea.w-input, textarea.w-select {
   margin-right: 10px;
   font-size: 16px;
   line-height: 16px;
-  display: flex;
+  text-align: left;
 }
 
 .breadcrumb-text.inner-title {
