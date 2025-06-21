@@ -17,7 +17,7 @@
 
 /* Switcher */
 
-.switcher__radio {
+.switcher__radio, .icon-arrows {
     filter: invert(0);
 }
 

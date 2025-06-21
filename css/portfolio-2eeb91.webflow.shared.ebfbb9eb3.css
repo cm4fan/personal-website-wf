@@ -2103,10 +2103,6 @@ textarea.w-input, textarea.w-select {
   display: flex;
 }
 
-.heading:hover {
-  color: #333;
-}
-
 .text-block {
   color: var(--_colors---fg-tertiary);
   text-align: left;
@@ -2285,11 +2281,14 @@ textarea.w-input, textarea.w-select {
   background-image: linear-gradient(to bottom, var(--_colors---state-active), var(--_colors---state-active));
 }
 
-.image {
-  color: var(--_colors---fg-tertiary);
+.icon-arrows {
   width: 16px;
   height: 16px;
+  margin-right: 4px;
+  margin-left: 2px;
 }
+
+
 
 .breadcrumb-link {
   grid-column-gap: 0px;
@@ -2557,11 +2556,6 @@ textarea.w-input, textarea.w-select {
   flex-direction: column;
   width: 260px;
   display: flex;
-}
-
-.image-5 {
-  width: 16px;
-  margin-right: 8px;
 }
 
 .inner-title {
