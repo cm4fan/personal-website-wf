@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const options = {
           root: null,
-          rootMargin: '-7% 0px -7% 0px',
+          rootMargin: '-1% 0px -7% 0px',
           threshold: 1
         };
 

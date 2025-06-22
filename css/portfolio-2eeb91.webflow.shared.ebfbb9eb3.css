@@ -2197,6 +2197,7 @@ textarea.w-input, textarea.w-select {
   overflow: hidden;
   margin-top: 15px;
   margin-bottom: 30px;
+  border: 1px solid var(--_colors---bg-secondary);
 }
 
 video {
@@ -2353,6 +2354,29 @@ video {
 
 .breadcrumb-link:hover {
   text-decoration: underline;
+  text-decoration-color: var(--_colors---fg-primary);
+}
+
+ol.reference-list {
+    color: var(--_colors---fg-secondary);
+    padding-left: 20px;
+}
+
+ol.reference-list li {
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+
+.reference-link {
+    font-size: 16px;
+    text-decoration: underline;
+    color: var(--_colors---fg-secondary);
+    text-decoration-color: var(--_colors---bg-tertiary);
+}
+
+.reference-link:hover {
+    color: var(--_colors---fg-primary);
+    text-decoration-color: var(--_colors---fg-primary);
 }
 
 .section {
