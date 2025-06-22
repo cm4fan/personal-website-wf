@@ -2223,6 +2223,10 @@ video {
   text-decoration: none;
 }
 
+.container + .paragraph {
+  margin-top: 30px;
+}
+
 .paragraph.case-subheading {
   outline-color: var(--_colors---fg-tertiary);
   color: var(--_colors---fg-tertiary);
