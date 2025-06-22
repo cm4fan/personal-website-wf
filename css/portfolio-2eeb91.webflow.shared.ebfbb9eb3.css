@@ -2197,7 +2197,7 @@ textarea.w-input, textarea.w-select {
   width: 100%;
   border-radius: 16px;
   overflow: hidden;
-  margin-top: 15px;
+  margin-top: 5px;
   margin-bottom: 40px;
   border: 1px solid var(--_colors---bg-secondary);
 }
@@ -2218,7 +2218,6 @@ video {
 .paragraph {
   pointer-events: auto;
   color: var(--_colors---fg-secondary);
-  margin-bottom: 0;
   font-size: 16px;
   line-height: 24px;
   text-decoration: none;
