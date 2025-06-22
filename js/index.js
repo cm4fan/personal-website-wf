@@ -1,3 +1,5 @@
+// Смена темы
+
 const lightStyles = document.querySelectorAll('link[rel=stylesheet][media*=prefers-color-scheme][media*=light]');
 const darkStyles = document.querySelectorAll('link[rel=stylesheet][media*=prefers-color-scheme][media*=dark]');
 const darkSchemeMedia = matchMedia('(prefers-color-scheme: dark)');
@@ -80,3 +82,31 @@ function clearScheme() {
 
 setupSwitcher();
 setupScheme();
+
+
+// Автозапуск видео
+
+document.addEventListener('DOMContentLoaded', () => {
+        const videos = document.querySelectorAll('video');
+
+        const options = {
+          root: null,
+          rootMargin: '-25% 0px -25% 0px',
+          threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            const video = entry.target;
+            if (entry.isIntersecting) {
+              video.play();
+            } else {
+              video.pause();
+            }
+          });
+        }, options);
+
+        videos.forEach(video => {
+          observer.observe(video);
+        });
+      });
