@@ -1296,12 +1296,12 @@ textarea.w-input, textarea.w-select {
 }
 
 .w-slider-dot.w-active {
-  background-color: var(--_colors---fg-tertiary);
+  background-color: var(--_colors---fg-secondary);
 }
 
 .w-slider-dot:focus {
   outline: none;
-  box-shadow: 0 0 0 2px var(--_colors---fg-tertiary);
+  box-shadow: 0 0 0 2px var(--_colors---fg-secondary);
 }
 
 .w-slider-dot:focus.w-active {
