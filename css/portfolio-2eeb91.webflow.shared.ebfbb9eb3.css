@@ -2213,10 +2213,8 @@ video {
 
 
 .paragraph {
-  outline-offset: 0px;
   pointer-events: auto;
   color: var(--_colors---fg-secondary);
-  outline: 3px #8f8f8f;
   margin-bottom: 0;
   font-size: 16px;
   line-height: 24px;
