@@ -2205,6 +2205,13 @@ video {
   max-width: 960px;
 }
 
+@media screen and (max-width: 767px) {
+  video::-webkit-media-controls {
+    display: none;
+  }
+}
+
+
 .paragraph {
   outline-offset: 0px;
   pointer-events: auto;
