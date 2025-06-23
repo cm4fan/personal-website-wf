@@ -2233,7 +2233,7 @@ video {
   text-decoration: none;
 }
 
-.container+.paragraph {
+.container+.paragraph, .img-container-16-9+.paragraph, .img-container-3-2+.paragraph {
   margin-top: 30px;
 }
 
