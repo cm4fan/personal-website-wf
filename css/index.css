@@ -1316,7 +1316,7 @@ textarea.w-input, textarea.w-select {
 
 .w-slider-arrow-left, .w-slider-arrow-right {
   cursor: pointer;
-  color: #fff;
+  color: #d9d9d9;
   -webkit-tap-highlight-color: #0000;
   tap-highlight-color: #0000;
   -webkit-user-select: none;
