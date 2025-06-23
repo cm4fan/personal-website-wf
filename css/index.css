@@ -2177,6 +2177,10 @@ textarea.w-input, textarea.w-select {
   display: flex;
 }
 
+.container.content.main-page {
+  margin-top: 40px;
+}
+
 .container.tag-container {
   padding-top: 10px;
 }
