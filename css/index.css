@@ -256,6 +256,10 @@ img {
   width: 100%;
 }
 
+.case-container {
+  margin-bottom: 15px;
+}
+
 .img-container img, .img-container-16-9 img {
   position: absolute;
   top: 0;
