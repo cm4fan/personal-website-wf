@@ -222,8 +222,8 @@ body {
   min-height: 100%;
   margin: 0;
   font-family: Inter, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 img {
@@ -453,7 +453,7 @@ h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 blockquote {
@@ -461,7 +461,7 @@ blockquote {
   margin: 0 0 10px;
   padding: 10px 20px;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 26px;
 }
 
 figure {
@@ -1936,7 +1936,7 @@ textarea.w-input, textarea.w-select {
   -webkit-user-select: none;
   user-select: none;
   padding: 18px;
-  font-size: 24px;
+  font-size: 26px;
   display: none;
   position: relative;
 }
@@ -2131,9 +2131,9 @@ textarea.w-input, textarea.w-select {
   margin-top: 0;
   margin-bottom: 0;
   font-family: Inter, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 26px;
   display: flex;
 }
 
@@ -2149,11 +2149,11 @@ textarea.w-input, textarea.w-select {
   box-sizing: border-box;
   object-fit: fill;
   width: auto;
-  max-width: 640px;
+  max-width: 720px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .container.header {
@@ -2162,7 +2162,7 @@ textarea.w-input, textarea.w-select {
   object-fit: fill;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 640px;
+  max-width: 720px;
   position: static;
   top: 0;
 }
@@ -2171,7 +2171,7 @@ textarea.w-input, textarea.w-select {
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;
-  max-width: 640px;
+  max-width: 720px;
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
@@ -2224,8 +2224,8 @@ video {
 .paragraph {
   pointer-events: auto;
   color: var(--_colors---fg-secondary);
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 26px;
   text-decoration: none;
 }
 
@@ -2236,16 +2236,16 @@ video {
 .paragraph.case-subheading {
   outline-color: var(--_colors---fg-tertiary);
   color: var(--_colors---fg-tertiary);
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .paragraph.image-caption {
   color: var(--_colors---fg-tertiary);
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .container-2 {
@@ -2275,8 +2275,8 @@ video {
   height: 32px;
   padding: 0 10px;
   font-family: Inter, sans-serif;
-  font-size: 14px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .link-button {
@@ -2290,7 +2290,7 @@ video {
   height: 32px;
   padding: 10px 8px 10px 12px;
   font-family: Inter, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 10px;
   text-decoration: none;
   display: flex;
@@ -2361,8 +2361,8 @@ video {
   width: auto;
   height: 32px;
   margin-right: 10px;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 18px;
+  line-height: 18px;
   text-decoration: none;
   display: flex;
 }
@@ -2383,7 +2383,7 @@ ol.reference-list li {
 }
 
 .reference-link {
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: underline;
   color: var(--_colors---fg-secondary);
   text-decoration-color: var(--_colors---fg-tertiary);
@@ -2440,9 +2440,9 @@ ol.reference-list li {
   color: var(--_colors---fg-primary);
   margin-top: 30px;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 26px;
 }
 
 .heading-3.compact {
@@ -2480,8 +2480,8 @@ ol.reference-list li {
 
 .button-link-text {
   color: var(--_colors---fg-primary);
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .text-block-2 {
@@ -2490,8 +2490,8 @@ ol.reference-list li {
   border-radius: 20px;
   padding-top: 4px;
   padding-left: 4px;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .tag {
@@ -2506,7 +2506,7 @@ ol.reference-list li {
 }
 
 .image-4 {
-  width: 16px;
+  width: 18px;
 }
 
 .text-block-3 {
@@ -2627,8 +2627,8 @@ ol.reference-list li {
   color: var(--_colors---fg-tertiary);
   margin-top: 0;
   margin-bottom: 10px;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 26px;
   text-align: left;
 }
 
