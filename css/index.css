@@ -2195,7 +2195,7 @@ textarea.w-input, textarea.w-select {
 
 .container.wide-image {
   width: auto;
-  max-width: 960px;
+  max-width: 1080px;
   height: auto;
 }
 
@@ -2616,7 +2616,7 @@ ol.reference-list li {
 .inner-title {
   color: var(--_colors---fg-primary);
   text-align: left;
-  margin-top: 60px;
+  margin-top: 80px;
   margin-bottom: 15px;
   font-family: Inter, sans-serif;
   font-size: 32px;
