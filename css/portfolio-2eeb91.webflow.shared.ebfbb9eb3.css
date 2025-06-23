@@ -2334,6 +2334,10 @@ video {
   background-image: linear-gradient(to bottom, var(--_colors---state-active), var(--_colors---state-active));
 }
 
+.link-button.resume-link {
+      padding: 10px 12px 10px 12px;
+}
+
 .icon-arrows {
   width: 16px;
   height: 16px;
