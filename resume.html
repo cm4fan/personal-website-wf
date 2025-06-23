@@ -14,7 +14,7 @@
         body {
             font-family: Inter, sans-serif;
             font-size: 16px;
-            background: #f7f7f7;
+            background: #f2f2f2;
             margin: 0;
             padding: 0;
         }
@@ -24,7 +24,7 @@
             margin: 16px auto;
             background: #fff;
             border-radius: 15px;
-            padding: 32px 24px;
+            padding: 32px 24px 16px;
         }
 
         @media screen and (max-width: 767px) {
@@ -110,6 +110,12 @@
             margin-bottom: 8px;
             color: #444;
         }
+
+        .contacts {
+            display: flex;
+            flex-flow: row;
+            gap: 12px;
+        }
     </style>
 </head>
 
@@ -120,7 +126,7 @@
             <p>Россия, Новосибирск</p>
             <p><a href="https://nikolayguryanov.com/">nikolayguryanov.com</a></p>
         </div>
-        
+
         <div class="section">
             <h2>Общие сведения</h2>
             <p>
@@ -132,44 +138,38 @@
             <div class="job">
                 <div class="job-title">Ведущий дизайнер продукта</div>
                 <div class="job-company">Positive Technologies</div>
-                <div class="job-period">март 2024 — настоящее время (1 год 4 месяца)</div>
+                <div class="job-period">март 2024 — настоящее время</div>
             </div>
             <div class="job">
                 <div class="job-title">Старший дизайнер продукта</div>
                 <div class="job-company">Positive Technologies</div>
-                <div class="job-period">октябрь 2019 — март 2024 (4 года 6 месяцев)</div>
+                <div class="job-period">октябрь 2019 — март 2024</div>
             </div>
             <div class="job">
                 <div class="job-title">Руководитель отдела дизайна</div>
                 <div class="job-company">Городские порталы Shkulev Media Holding</div>
-                <div class="job-period">ноябрь 2017 — октябрь 2019 (2 года)</div>
+                <div class="job-period">ноябрь 2017 — октябрь 2019</div>
             </div>
             <div class="job">
                 <div class="job-title">Руководитель группы интерфейсов</div>
-                <div class="job-company">НГС / Zarplata.ru / N1.RU</div>
-                <div class="job-period">февраль 2011 — октябрь 2017 (6 лет 9 месяцев)</div>
+                <div class="job-company">NGS.ru / Zarplata.ru / N1.RU</div>
+                <div class="job-period">февраль 2011 — октябрь 2017</div>
                 <div class="projects">
                     Организация работы отдела дизайнеров над внутренними проектами компании.
                 </div>
             </div>
             <div class="job">
                 <div class="job-title">Дизайнер</div>
-                <div class="job-company">НГС</div>
-                <div class="job-period">сентябрь 2008 — февраль 2011 (2 года 6 месяцев)</div>
+                <div class="job-company">NGS.ru</div>
+                <div class="job-period">сентябрь 2008 — февраль 2011</div>
                 <div class="projects">
-                    Поддержка и развитие существующих проектов компании, запуск новых проектов.<br>
-                    В том числе:<br>
-                    — НГС.Карты<br>
-                    — НГС.Погода (версии 2010 и 2013)<br>
-                    — НГС.Дом (версия 2010)<br>
-                    — НГС.Работа 3.0<br>
-                    — Участие в работе над мобильным приложением НГС для Айфона
+                    Поддержка и развитие существующих проектов компании, запуск новых проектов.
                 </div>
             </div>
             <div class="job">
                 <div class="job-title">Дизайнер</div>
                 <div class="job-company">I.B.C.</div>
-                <div class="job-period">октябрь 2007 — сентябрь 2008 (1 год)</div>
+                <div class="job-period">октябрь 2007 — сентябрь 2008</div>
                 <div class="projects">
                     Дизайн крупных и мелких сайтов.
                 </div>
@@ -184,11 +184,13 @@
         </div>
         <div class="section">
             <h2>Связь со мной</h2>
-            <p><a href="mailto:hellonikolay@gmail.com" class="reference-link">Почта</a></p>
-            <p><a href="https://t.me/nguryanov" target="_blank" class="reference-link">Телеграм</a></p>
-            <p><a href="https://www.linkedin.com/in/nguryanov/" target="_blank" class="reference-link">Линкедин</a>
-            </p>
-            <p><a href="https://github.com/cm4fan" target="_blank" class="reference-link">Гитхаб</a></p>
+            <div class="contacts">
+                <p><a href="mailto:hellonikolay@gmail.com" class="reference-link">Почта</a></p>
+                <p><a href="https://t.me/nguryanov" target="_blank" class="reference-link">Телеграм</a></p>
+                <p><a href="https://www.linkedin.com/in/nguryanov/" target="_blank" class="reference-link">Линкедин</a>
+                </p>
+                <p><a href="https://github.com/cm4fan" target="_blank" class="reference-link">Гитхаб</a></p>
+            </div>
         </div>
     </div>
 </body>
