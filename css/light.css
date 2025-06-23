@@ -26,5 +26,5 @@
 }
 
 .switcher__status {
-    filter: invert(0);
+    filter: brightness(100%);
 }
