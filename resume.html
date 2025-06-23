@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>Резюме ・ Николай Гурьянов</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload"
@@ -18,11 +20,17 @@
         }
 
         .container {
-            max-width: 720px;
+            width: 720px;
             margin: 16px auto;
             background: #fff;
             border-radius: 15px;
             padding: 32px 24px;
+        }
+
+        @media screen and (max-width: 767px) {
+            .container {
+                max-width: 300px;
+            }
         }
 
         h1 {
@@ -170,11 +178,11 @@
         </div>
         <div class="section">
             <h2>Связь со мной</h2>
-            <div><a href="mailto:hellonikolay@gmail.com"
-                    class="reference-link">Почта</a></div>
-             <div><a href="https://t.me/nguryanov" target="_blank" class="reference-link">Телеграм</a></div>
-             <div><a href="https://www.linkedin.com/in/nguryanov/" target="_blank" class="reference-link">Линкедин</a></div>
-             <div><a href="https://github.com/cm4fan" target="_blank" class="reference-link">Гитхаб</a></div>        
+            <div><a href="mailto:hellonikolay@gmail.com" class="reference-link">Почта</a></div>
+            <div><a href="https://t.me/nguryanov" target="_blank" class="reference-link">Телеграм</a></div>
+            <div><a href="https://www.linkedin.com/in/nguryanov/" target="_blank" class="reference-link">Линкедин</a>
+            </div>
+            <div><a href="https://github.com/cm4fan" target="_blank" class="reference-link">Гитхаб</a></div>
         </div>
     </div>
 </body>
