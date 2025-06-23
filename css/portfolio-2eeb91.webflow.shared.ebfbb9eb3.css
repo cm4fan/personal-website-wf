@@ -2378,7 +2378,7 @@ ol.reference-list li {
   font-size: 16px;
   text-decoration: underline;
   color: var(--_colors---fg-secondary);
-  text-decoration-color: var(--_colors---bg-tertiary);
+  text-decoration-color: var(--_colors---fg-tertiary);
 }
 
 .reference-link:hover {
