@@ -239,7 +239,7 @@ img {
   padding-bottom: 66.67%; /* 3:2 ratio */
   height: 0;
   overflow: hidden;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   background-color: var(--_colors---bg-secondary);
   border-radius: 16px;
 }
@@ -249,7 +249,7 @@ img {
   padding-bottom: 56.25%; /* 16:9 ratio */
   height: 0;
   overflow: hidden;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   background-color: var(--_colors---bg-secondary);
   border-radius: 16px;
   width: 100%;
@@ -2199,7 +2199,7 @@ textarea.w-input, textarea.w-select {
   border-radius: 16px;
   overflow: hidden;
   margin-top: 5px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   border: 1px solid var(--_colors---bg-secondary);
 }
 
@@ -2429,7 +2429,7 @@ ol.reference-list li {
 
 .heading-3 {
   color: var(--_colors---fg-primary);
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 20px;
   font-size: 20px;
   font-weight: 500;
@@ -2627,6 +2627,7 @@ ol.reference-list li {
     width: 100%;
     height: auto;
     container-type: inline-size;
+    margin-bottom: 30px;
 }
 
 @media screen and (max-width: 767px) {
