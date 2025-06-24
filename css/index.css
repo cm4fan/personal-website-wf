@@ -627,9 +627,9 @@ ol.reference-list li {
   color: var(--_colors---fg-primary);
   margin-top: 30px;
   margin-bottom: 20px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 500;
-  line-height: 26px;
+  line-height: 32px;
 }
 
 .heading-3.compact {
