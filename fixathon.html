@@ -3,17 +3,14 @@
 
 <head>
     <script>
-        (function() {
-          try {
-            var saved = localStorage.getItem('color-scheme');
-            if (saved === 'dark' || saved === 'light') {
-              document.documentElement.setAttribute('data-theme', saved);
-            } else {
-              document.documentElement.removeAttribute('data-theme');
-            }
-          } catch (e) {}
-        })();
-      </script>
+      try {
+        var s = localStorage.getItem('color-scheme');
+        if (s === 'dark' || s === 'light')
+          document.documentElement.setAttribute('data-theme', s);
+        else
+          document.documentElement.removeAttribute('data-theme');
+      } catch (e) {}
+    </script>
     <meta charset="utf-8" />
     <title>PT AI Fixathon ・ Николай Гурьянов</title>
     <meta content="PT AI Fixathon" property="og:title" />

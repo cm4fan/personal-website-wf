@@ -2,17 +2,14 @@
 <html lang="ru">
 <head>
     <script>
-        (function() {
-          try {
-            var saved = localStorage.getItem('color-scheme');
-            if (saved === 'dark' || saved === 'light') {
-              document.documentElement.setAttribute('data-theme', saved);
-            } else {
-              document.documentElement.removeAttribute('data-theme');
-            }
-          } catch (e) {}
-        })();
-      </script>
+      try {
+        var s = localStorage.getItem('color-scheme');
+        if (s === 'dark' || s === 'light')
+          document.documentElement.setAttribute('data-theme', s);
+        else
+          document.documentElement.removeAttribute('data-theme');
+      } catch (e) {}
+    </script>
     <meta charset="utf-8" />
     <title>Приложения для геймеров ・ Николай Гурьянов</title>
     <meta content="Приложения для геймеров" property="og:title" />
