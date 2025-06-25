@@ -34,9 +34,12 @@ function setupScheme() {
 function setScheme(scheme) {
     switchMedia(scheme);
 
+    // Set data-theme attribute for inline variables
     if (scheme === 'auto') {
+        document.documentElement.removeAttribute('data-theme');
         clearScheme();
     } else {
+        document.documentElement.setAttribute('data-theme', scheme);
         saveScheme(scheme);
     }
 }

@@ -1,20 +1,3 @@
-:root {
-  --_colors---fg-primary: #111;
-  --_colors---fg-tertiary: #969696;
-  --_colors---bg-primary: white;
-  --_colors---fg-secondary: #515151;
-  --_colors---bg-secondary: #f3f3f3;
-  --_colors---state-hover: #0000000d;
-  --_colors---state-active: #00000017;
-  --_colors---link-active: #01477f;
-  --_colors---bg-tertiary: #dadada;
-  --_colors---bg-contrast: #222;
-  --_colors---link-normal: #0168bb;
-  --_colors---link-hover: #015599;
-  --_colors---link-visited: #630038;
-}
-
-
 /* Switcher */
 
 .switcher__radio, .icon-arrows {
