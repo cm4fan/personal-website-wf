@@ -50,8 +50,8 @@ legend {
 }
 
 @font-face {
-    font-family: "Onest";
-    src: url("../fonts/onst.ttf");
+    font-family: "VelaSans";
+    src: url("../fonts/velasans.ttf");
     }
 
 @font-face {
@@ -98,10 +98,10 @@ body {
   margin-left: 0;
   min-height: 100%;
   margin: 0;
-  font-family: Onest;
+  font-family: VelaSans;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
 }
 
 img {
@@ -363,9 +363,9 @@ fieldset {
   height: 36px;
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 26px;
+  font-weight: 750;
+  font-size: 16px;
+  line-height: 24px;
   display: flex;
 }
 
@@ -376,8 +376,8 @@ fieldset {
   max-width: 720px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .container.header {
@@ -448,8 +448,8 @@ video {
 .paragraph {
   pointer-events: auto;
   color: var(--_colors---fg-secondary);
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 24px;
   text-decoration: none;
 }
 
@@ -460,8 +460,8 @@ video {
 .paragraph.case-subheading {
   outline-color: var(--_colors---fg-tertiary);
   color: var(--_colors---fg-tertiary);
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
   margin-bottom: 8px;
 }
 
@@ -491,7 +491,7 @@ video {
   width: 100%;
   height: 36px;
   padding: 10px 10px 10px 14px;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 10px;
   text-decoration: none;
   display: flex;
@@ -552,7 +552,7 @@ video {
   width: auto;
   height: 36px;
   margin-right: 10px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 18px;
   text-decoration: none;
   display: flex;
@@ -574,7 +574,7 @@ ol.reference-list li {
 }
 
 .reference-link {
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: underline;
   color: var(--_colors---fg-secondary);
   text-decoration-color: var(--_colors---fg-tertiary);
@@ -623,8 +623,8 @@ ol.reference-list li {
   color: var(--_colors---fg-primary);
   margin-top: 30px;
   margin-bottom: 20px;
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 550;
   line-height: 32px;
 }
 
@@ -663,8 +663,8 @@ ol.reference-list li {
 
 .button-link-text {
   color: var(--_colors---fg-primary);
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .text-block-3 {
@@ -758,11 +758,11 @@ ol.reference-list li {
 }
 
 .inner-subtitle {
-  color: var(--_colors---fg-tertiary);
+  color: var(--_colors---fg-secondary);
   margin-top: 0;
   margin-bottom: 10px;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 24px;
   text-align: left;
 }
 
