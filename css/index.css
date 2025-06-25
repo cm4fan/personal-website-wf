@@ -515,7 +515,7 @@ video {
   grid-column-gap: 2px;
   grid-row-gap: 2px;
   border: 1px solid var(--_colors---bg-tertiary);
-  border-radius: 16px;
+  border-radius: 32px;
   justify-content: center;
   align-items: baseline;
   width: 100%;
