@@ -617,7 +617,7 @@ ol.reference-list li {
   display: flex;
 }
 
-.heading-3 {
+.heading-2 {
   color: var(--_colors---fg-primary);
   margin-top: 30px;
   margin-bottom: 20px;
@@ -626,7 +626,7 @@ ol.reference-list li {
   line-height: 32px;
 }
 
-.heading-3.compact {
+.heading-2.contacts {
   margin-bottom: 10px;
 }
 
