@@ -1,12 +1,3 @@
-html {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
-body {
-  margin: 0;
-}
-
  footer, header, nav, section {
   display: block;
 }
@@ -59,31 +50,8 @@ legend {
 }
 
 @font-face {
-      font-family: 'NTSomic-Regular';
-      src: url('fonts/NTSomic-Regular.woff2') format('woff2'),
-      font-weight: 400;
-      font-style: normal;
-    }
-
-@font-face {
-      font-family: 'NTSomic-Medium';
-      src: url('fonts/NTSomic-Medium.woff2') format('woff2'),
-      font-weight: 500;
-      font-style: normal;
-    }
-
-@font-face {
-      font-family: 'NTSomic-Semibold';
-      src: url('fonts/NTSomic-Semibold.woff2') format('woff2'),
-      font-weight: 600;
-      font-style: normal;
-    }
-
-@font-face {
-      font-family: 'NTSomic-Bold';
-      src: url('fonts/NTSomic-Bold.woff2') format('woff2'),
-      font-weight: 700;
-      font-style: normal;
+    font-family: "Onest";
+    src: url("../fonts/onst.ttf");
     }
 
 @font-face {
@@ -118,6 +86,8 @@ legend {
 }
 
 html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
   height: 100%;
 }
 
@@ -128,7 +98,8 @@ body {
   margin-left: 0;
   min-height: 100%;
   margin: 0;
-  font-family: NTSomic-Regular, sans-serif;
+  font-family: Onest;
+  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 }
@@ -392,7 +363,6 @@ fieldset {
   height: 36px;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: NTSomic-Bold;
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
@@ -520,7 +490,7 @@ video {
   align-items: baseline;
   width: 100%;
   height: 36px;
-  padding: 8px 10px 8px 14px;
+  padding: 10px 10px 10px 14px;
   font-size: 18px;
   line-height: 10px;
   text-decoration: none;
@@ -560,7 +530,7 @@ video {
 }
 
 .link-button.resume-link {
-      padding: 8px 12px 8px 12px;
+      padding: 9px 12px 9px 12px;
 }
 
 .icon-arrows {
@@ -653,7 +623,6 @@ ol.reference-list li {
   color: var(--_colors---fg-primary);
   margin-top: 30px;
   margin-bottom: 20px;
-  font-family: NTSomic-Medium;
   font-size: 24px;
   font-weight: 500;
   line-height: 32px;
