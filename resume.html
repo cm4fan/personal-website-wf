@@ -10,10 +10,28 @@
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap"
         rel="stylesheet"> -->
     <style>
+        html, body {
+            background: white;
+            color: #111;
+            transition: none !important;
+        }
+        @media (prefers-color-scheme: dark) {
+            html, body {
+                background: #202020;
+                color: #e0e0e0;
+            }
+        }
+        html[data-theme="dark"] body, body[data-theme="dark"] {
+            background: #202020 !important;
+            color: #e0e0e0 !important;
+        }
+        html[data-theme="light"] body, body[data-theme="light"] {
+            background: white !important;
+            color: #111 !important;
+        }
         body {
             font-size: 16px;
             line-height: 24px;
-            background: #f2f2f2;
             margin: 0;
             padding: 0;
         }
