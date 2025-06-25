@@ -29,6 +29,30 @@
         }
     </script>
 
+    <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('color-scheme');
+        var systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var scheme = saved === 'dark' || saved === 'light' ? saved : (systemDark ? 'dark' : 'light');
+        if (saved === 'auto' || saved === null) {
+          // Let browser handle via media queries
+          return;
+        }
+        var links = document.querySelectorAll('link[rel="stylesheet"][media*="prefers-color-scheme"]');
+        links.forEach(function(link) {
+          if (scheme === 'dark' && link.media.includes('dark')) {
+            link.media = 'all';
+          } else if (scheme === 'light' && link.media.includes('light')) {
+            link.media = 'all';
+          } else {
+            link.media = 'not all';
+          }
+        });
+      } catch (e) {}
+    })();
+    </script>
+
     <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
     <link href="images/app-icon.png" rel="apple-touch-icon" />
 </head>

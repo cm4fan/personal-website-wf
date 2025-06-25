@@ -32,6 +32,30 @@
 
     <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
     <link href="images/app-icon.png" rel="apple-touch-icon" />
+
+    <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('color-scheme');
+        var systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var scheme = saved === 'dark' || saved === 'light' ? saved : (systemDark ? 'dark' : 'light');
+        if (saved === 'auto' || saved === null) {
+          // Let browser handle via media queries
+          return;
+        }
+        var links = document.querySelectorAll('link[rel="stylesheet"][media*="prefers-color-scheme"]');
+        links.forEach(function(link) {
+          if (scheme === 'dark' && link.media.includes('dark')) {
+            link.media = 'all';
+          } else if (scheme === 'light' && link.media.includes('light')) {
+            link.media = 'all';
+          } else {
+            link.media = 'not all';
+          }
+        });
+      } catch (e) {}
+    })();
+    </script>
 </head>
 
 <body>
@@ -42,7 +66,7 @@
                         alt="" class="icon-arrows" />
                     <div>Николай Гурьянов</div>
                 </a>
-                <h1 class="inner-title">PT Application Inspector</h1>
+                <h1 class="inner-title">PT Application Inspector</h1>
                 <div class="inner-subtitle">Инструмент для анализа защищенности приложений</div>
             </div>
         </div>
@@ -58,12 +82,12 @@
         </div>
         <div class="w-layout-blockcontainer container content w-container">
             <h2 class="heading-2">Задача</h2>
-            <p class="paragraph">Когда я&nbsp;пришёл в&nbsp;команду PT&nbsp;Application Inspector, продукт существовал в&nbsp;виде отдельного приложения для Windows, а&nbsp;веб-версия только начинала развиваться. <br />
-                <br />Хотя у&nbsp;Windows-версии были свои плюсы (чего стоит сплеш-скрин с&nbsp;котиком), она имела ряд
-                ограничений и&nbsp;проблем:<br />
-                &mdash;&nbsp;Продуктом можно было пользоваться только на&nbsp;Windows.<br />
-                &mdash;&nbsp;Проблемы с&nbsp;интерфейсом. Например, нельзя было фильтровать проекты, а&nbsp;панель администратора жила на&nbsp;одном экране с&nbsp;информацией о&nbsp;программе.<br />
-                &mdash;&nbsp;Сложности в разработке и&nbsp;поддержке.
+            <p class="paragraph">Когда я пришёл в команду PT Application Inspector, продукт существовал в виде отдельного приложения для Windows, а веб-версия только начинала развиваться. <br />
+                <br />Хотя у Windows-версии были свои плюсы (чего стоит сплеш-скрин с котиком), она имела ряд
+                ограничений и проблем:<br />
+                &mdash; Продуктом можно было пользоваться только на Windows.<br />
+                &mdash; Проблемы с интерфейсом. Например, нельзя было фильтровать проекты, а панель администратора жила на одном экране с информацией о программе.<br />
+                &mdash; Сложности в разработке и поддержке.
                 <br />
                 <br />
                 Экраны версии для Windows</p>
@@ -92,35 +116,35 @@
                 <div class="w-slider-nav w-round"></div>
             </div>
             <h2 class="heading-2">Решение</h2>
-            <p class="paragraph">От&nbsp;единого приложения на&nbsp;Windows мы&nbsp;перешли к&nbsp;нескольким продуктам,
+            <p class="paragraph">От единого приложения на Windows мы перешли к нескольким продуктам,
                 подходящим разным аудиториям:<br />
-                &mdash;&nbsp;Appsec инженеры и&nbsp;менеджеры работают в&nbsp;веб-версии.<br />
-                &mdash;&nbsp;Разработчики и&nbsp;security-чемпионы интегрируют проверку уязвимостей в&nbsp;привычную среду разработки.<br />
-                &mdash;&nbsp;А&nbsp;девопсы и&nbsp;девсекопсы встраивают плагины
-                PT&nbsp;AI&nbsp;в&nbsp;CI/CD&nbsp;пайплайны.<br /></p>
+                &mdash; Appsec инженеры и менеджеры работают в веб-версии.<br />
+                &mdash; Разработчики и security-чемпионы интегрируют проверку уязвимостей в привычную среду разработки.<br />
+                &mdash; А девопсы и девсекопсы встраивают плагины
+                PT AI в CI/CD пайплайны.<br /></p>
             <h2 class="heading-2" id="web">Веб-версия</h2>
             <p class="paragraph">Построена на базе дизайн-системы, общей для всей компании, что обеспечивает единообразие интерфейсов и ускоряет разработку за счёт повторного использования готовых компонентов.</p>
-            <p class="paragraph">Список проектов с&nbsp;быстрым поиском, фильтрами, информацией о&nbsp;последнем сканировании.</p>
+            <p class="paragraph">Список проектов с быстрым поиском, фильтрами, информацией о последнем сканировании.</p>
             <div class="w-layout-blockcontainer container wide-image w-container">
                 <div class="video-container">
                     <video autoplay muted loop playsinline src="videos/pt-ai-project-list.mp4"></video>
                 </div>
             </div>
-            <p class="paragraph">Детали сканирования: слева список уязвимостей с&nbsp;действиями и&nbsp;фильтрами, а&nbsp;справа&nbsp;&mdash; подробная информация о&nbsp;выбранной уязвимости.
+            <p class="paragraph">Детали сканирования: слева список уязвимостей с действиями и фильтрами, а справа&nbsp;&mdash; подробная информация о выбранной уязвимости.
             </p>
             <div class="w-layout-blockcontainer container wide-image w-container">
                 <div class="video-container">
                     <video autoplay muted loop playsinline src="videos/pt-ai-project-and-settings.mp4"></video>
                 </div>
             </div>
-            <p class="paragraph">Админка разделена на&nbsp;логические блоки и&nbsp;готова к&nbsp;масштабированию.</p>
+            <p class="paragraph">Админка разделена на логические блоки и готова к масштабированию.</p>
             <div class="w-layout-blockcontainer container wide-image w-container">
                 <div class="video-container">
                     <video autoplay muted loop playsinline src="videos/pt-ai-admin.mp4"></video>
                 </div>
             </div>
             <h2 class="heading-2" id="plugins">Плагины для IDE</h2>
-            <p class="paragraph">Плагины встраиваются в&nbsp;привычную среду разработчика и&nbsp;выглядят максимально нативно за&nbsp;счет использования привычных паттернов и&nbsp;элементов&nbsp;UI.
+            <p class="paragraph">Плагины встраиваются в привычную среду разработчика и выглядят максимально нативно за счет использования привычных паттернов и элементов UI.
             <br />
             <br />
             IntelliJ IDEA
@@ -138,10 +162,10 @@
             </div>
 
             <h2 class="heading-2">Дальнейшая работа</h2>
-            <p class="paragraph">Во время работы над задачами продуктовая команда PT&nbsp;AI&nbsp;глубоко погружается в&nbsp;стадию дискавери:<br />
-                — Изучаем конкурентов и&nbsp;лучшие практики рынка.<br />
-                — Создаем юзер-флоу и&nbsp;майндмэпы, обнаруживаем болевые точки в&nbsp;пользовательских сценариях.<br />
-                — Активно общаемся с&nbsp;пользователями: проводим интервью и&nbsp;коридорные тесты, собираем обратную связь в&nbsp;продуктовом чате и&nbsp;в&nbsp;дpугих каналах коммуникации.<br />
+            <p class="paragraph">Во время работы над задачами продуктовая команда PT AI глубоко погружается в стадию дискавери:<br />
+                — Изучаем конкурентов и лучшие практики рынка.<br />
+                — Создаем юзер-флоу и майндмэпы, обнаруживаем болевые точки в пользовательских сценариях.<br />
+                — Активно общаемся с пользователями: проводим интервью и коридорные тесты, собираем обратную связь в продуктовом чате и в дргих каналах коммуникации.<br />
                 ‍</p>
             <h2 class="heading-2">Ссылки</h2>
             <ol class="reference-list">
