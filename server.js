@@ -6,12 +6,15 @@ const cookieParser = require('cookie-parser');
 const app = express();
 app.use(cookieParser());
 
-// Serve static assets (CSS, JS, images, fonts, videos)
-app.use('/css', express.static('css'));
-app.use('/js', express.static('js'));
-app.use('/images', express.static('images'));
-app.use('/fonts', express.static('fonts'));
-app.use('/videos', express.static('videos'));
+// Set cache duration (1 year)
+const oneYear = 1000 * 60 * 60 * 24 * 365;
+
+// Serve static assets with cache headers
+app.use('/css', express.static('css', { maxAge: oneYear }));
+app.use('/js', express.static('js', { maxAge: oneYear }));
+app.use('/images', express.static('images', { maxAge: oneYear }));
+app.use('/fonts', express.static('fonts', { maxAge: oneYear }));
+app.use('/videos', express.static('videos', { maxAge: oneYear }));
 
 // Helper to inject data-theme into <html>
 function injectTheme(html, theme) {

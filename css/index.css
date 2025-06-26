@@ -815,6 +815,10 @@ ol.reference-list li {
   padding-bottom: 5px
 }
 
+.case-thumbnail {
+  margin-bottom: 15px;
+}
+
 .container-3 {
   flex-flow: column;
   display: block
@@ -880,7 +884,7 @@ ol.reference-list li {
 .inner-title {
   color: var(--_colors---fg-primary);
   text-align: left;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 15px;
   font-size: 32px;
   font-weight: 800;
