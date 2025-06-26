@@ -37,31 +37,32 @@ function clearScheme() {
     localStorage.removeItem('color-scheme');
 }
 
-setupSwitcher();
-
-// Автозапуск видео
+// Wrap both setupSwitcher and video logic in DOMContentLoaded
 
 document.addEventListener('DOMContentLoaded', () => {
-        const videos = document.querySelectorAll('video');
+    setupSwitcher();
 
-        const options = {
-          root: null,
-          rootMargin: '-1% 0px -7% 0px',
-          threshold: 1
-        };
+    // Автозапуск видео
+    const videos = document.querySelectorAll('video');
 
-        const observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach(entry => {
-            const video = entry.target;
-            if (entry.isIntersecting) {
-              video.play();
-            } else {
-              video.pause();
-            }
-          });
-        }, options);
+    const options = {
+      root: null,
+      rootMargin: '-1% 0px -7% 0px',
+      threshold: 1
+    };
 
-        videos.forEach(video => {
-          observer.observe(video);
-        });
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        const video = entry.target;
+        if (entry.isIntersecting) {
+          video.play();
+        } else {
+          video.pause();
+        }
       });
+    }, options);
+
+    videos.forEach(video => {
+      observer.observe(video);
+    });
+});
