@@ -14,6 +14,18 @@
   --_colors---link-visited: #630038;
 }
 
+  .switcher__radio, .icon-arrows {
+  filter: invert(0);
+}
+
+.switcher__radio:checked {
+  filter: invert(0);
+}
+
+.switcher__status {
+  filter: brightness(100%);
+}
+
 
 @media (prefers-color-scheme: dark) {
     :root {
@@ -30,6 +42,20 @@
   --_colors---link-normal: #0168bb;
   --_colors---link-hover: #015599;
   --_colors---link-visited: #630038;
+
+  .switcher__radio, .icon-arrows {
+  filter: invert(1);
+}
+
+.switcher__radio:checked {
+  filter: invert(0);
+}
+
+.switcher__status {
+  filter: brightness(60%);
+}
+
+
 }
 
 }
@@ -51,6 +77,18 @@ html[data-theme="light"] {
 }
 
 /* Switcher */
+
+html[data-theme="light"] .switcher__radio, html[data-theme="light"] .icon-arrows {
+  filter: invert(0) !important;
+}
+
+html[data-theme="light"] .switcher__radio:checked {
+  filter: invert(0) !important;
+}
+
+html[data-theme="light"] .switcher__status {
+  filter: brightness(100%) !important;
+}
 
 html[data-theme="dark"] .switcher__radio, html[data-theme="dark"] .icon-arrows {
   filter: invert(1) !important;
@@ -508,7 +546,6 @@ html[data-theme="dark"] .switcher__status {
    width: 100%;
    border-radius: 16px;
    overflow: hidden;
-   margin-top: 5px;
    margin-bottom: 30px;
    border: 1px solid var(--_colors---bg-secondary);
  }
