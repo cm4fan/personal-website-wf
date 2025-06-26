@@ -25,33 +25,34 @@
 </head>
 
 <body>
-    <div class="theme-switch-wrap">
-
-        <fieldset class="switcher" tabindex="0">
-            <legend class="switcher__legend">Схема</legend>
-            <input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light"
-                aria-label="Светлая">
-            <input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto"
-                aria-label="Системная" checked="">
-            <input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark"
-                aria-label="Тёмная">
-            <div class="switcher__status"></div>
-        </fieldset>
-
-    </div>
     <section class="section header">
         <div class="w-layout-hflex container">
-            <div class="w-layout-blockcontainer breadcumb-container w-container"><a href="./"
+            <div class="w-layout-blockcontainer container-2 w-container">
+                <a href="./"
                     class="breadcrumb-link w-inline-block"><img src="images/left-arrow-svgrepo-com.svg" loading="eager"
                         alt="" class="icon-arrows" />
                     <div>Николай Гурьянов</div>
                 </a>
-                <h1 class="inner-title">Приложения для геймеров</h1>
-                <div class="inner-subtitle">Помогают добиваться лучших результатов в&nbsp;играх</div>
+            </div>
+            <div class="theme-switch-wrap">
+
+                <fieldset class="switcher" tabindex="0">
+                    <legend class="switcher__legend">Схема</legend>
+                    <input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light"
+                        aria-label="Светлая">
+                    <input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto"
+                        aria-label="Системная" checked="">
+                    <input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark"
+                        aria-label="Тёмная">
+                    <div class="switcher__status"></div>
+                </fieldset>
+                <script src="js/theme-switcher.js"></script>
             </div>
         </div>
     </section>
     <section class="section content">
+        <h1 class="inner-title">Приложения для геймеров</h1>
+        <div class="inner-subtitle">Помогают добиваться лучших результатов в&nbsp;играх</div>
         <div class="w-layout-blockcontainer container wide-image w-container">
             <div class="img-container-16-9">
                 <img src="images/apps-hero.png" loading="eager"
