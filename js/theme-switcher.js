@@ -30,6 +30,7 @@ function getSavedScheme() {
 
 function saveScheme(scheme) {
     localStorage.setItem('color-scheme', scheme);
+    document.cookie = "color-scheme=" + scheme + "; path=/; max-age=31536000";
 }
 
 function clearScheme() {
