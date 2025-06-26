@@ -1,5 +1,4 @@
-// Смена темы
-
+// Theme switcher logic
 const switcherRadios = document.querySelectorAll('.switcher__radio');
 
 function setupSwitcher() {
@@ -37,32 +36,7 @@ function clearScheme() {
     localStorage.removeItem('color-scheme');
 }
 
-// Wrap both setupSwitcher and video logic in DOMContentLoaded
-
-document.addEventListener('DOMContentLoaded', () => {
+// Only run if switcher is present
+if (switcherRadios.length > 0) {
     setupSwitcher();
-
-    // Автозапуск видео
-    const videos = document.querySelectorAll('video');
-
-    const options = {
-      root: null,
-      rootMargin: '-1% 0px -7% 0px',
-      threshold: 1
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        const video = entry.target;
-        if (entry.isIntersecting) {
-          video.play();
-        } else {
-          video.pause();
-        }
-      });
-    }, options);
-
-    videos.forEach(video => {
-      observer.observe(video);
-    });
-});
+} 
