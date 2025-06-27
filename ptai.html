@@ -20,8 +20,10 @@
     <link rel="preload" href="/fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/InterDisplay-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
     <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <link href="css/splide.min.css" rel="stylesheet" type="text/css" />
     <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
     <link href="images/app-icon.png" rel="apple-touch-icon" />
+    <script src="js/splide.min.js"></script>
 </head>
 
 <body>
@@ -74,30 +76,21 @@
                 <br />
                 <br />
                 Экраны версии для Windows</p>
-            <div data-delay="4000" data-animation="slide" class="slider w-slider" data-autoplay="false"
-                data-easing="ease" data-hide-arrows="true" data-disable-swipe="false" data-autoplay-limit="0"
-                data-nav-spacing="4" data-duration="500" data-infinite="true">
-                <div class="w-slider-mask">
-                    <div class="w-slide"><img sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
-                            srcset="images/aie-1-p-500.png 500w, images/aie-1-p-800.png 800w, images/aie-1-p-1080.png 1080w, images/aie-1.png 1536w"
-                            alt="" src="images/aie-1.png" loading="eager" /></div>
-                    <div class="w-slide"><img src="images/aie-2.png" loading="eager"
-                            sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
-                            srcset="images/aie-2-p-500.png 500w, images/aie-2-p-800.png 800w, images/aie-2-p-1080.png 1080w, images/aie-2.png 1536w"
-                            alt="" /></div>
-                    <div class="w-slide"><img src="images/aie-3.png" loading="eager"
-                            sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
-                            srcset="images/aie-3-p-500.png 500w, images/aie-3-p-800.png 800w, images/aie-3-p-1080.png 1080w, images/aie-3.png 1536w"
-                            alt="" /></div>
-                </div>
-                <div class="w-slider-arrow-left">
-                    <div class="w-icon-slider-left"></div>
-                </div>
-                <div class="w-slider-arrow-right">
-                    <div class="w-icon-slider-right"></div>
-                </div>
-                <div class="w-slider-nav w-round"></div>
-            </div>
+            <section class="splide" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                              <li class="splide__slide"><img sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
+                                srcset="images/aie-1-p-500.png 500w, images/aie-1-p-800.png 800w, images/aie-1-p-1080.png 1080w, images/aie-1.png 1536w"
+                                alt="" src="images/aie-1.png" /></li>
+                              <li class="splide__slide"><img sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
+                                srcset="images/aie-2-p-500.png 500w, images/aie-2-p-800.png 800w, images/aie-2-p-1080.png 1080w, images/aie-2.png 1536w"
+                                alt="" src="images/aie-2.png" /></li>
+                              <li class="splide__slide"><img sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
+                                srcset="images/aie-3-p-500.png 500w, images/aie-3-p-800.png 800w, images/aie-3-p-1080.png 1080w, images/aie-3.png 1536w"
+                                alt="" src="images/aie-3.png" /></li>
+                          </ul>
+                    </div>
+            </section>
             <h2 class="heading-2">Решение</h2>
             <p class="paragraph">От единого приложения на Windows мы перешли к нескольким продуктам,
                 подходящим разным аудиториям:<br />
@@ -196,6 +189,9 @@
         </div>
     </section>
     <script src="js/video-autoplay.js"></script>
+    <script>
+        new Splide( '.splide' ).mount();
+      </script>
 </body>
 
 </html>
